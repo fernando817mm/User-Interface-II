@@ -48,7 +48,7 @@ table {
     margin: 0;
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid lightgreen;
+    /* border: 1px solid lightgreen; */
 }
 
 /* General Styles */
@@ -86,6 +86,10 @@ h3, h4{
     font-size:2.5rem;
 }
 
+section{
+    padding: 2% 0;
+}
+
 /* Header Styles */
 
 header{
@@ -98,6 +102,7 @@ nav{
     flex-direction: column;
     padding-top: 5vh;
     padding-left: 2vh;
+    margin-left: 4%;
 }
 
 .nav-links{
@@ -110,6 +115,12 @@ nav{
     border: 1px solid #4f4f4f;
     padding: 1% 4%;
     font-size: 2.5rem;
+    background-color: white;
+}
+
+.nav-links a:hover{
+    background-color: black;
+    color: antiquewhite;
 }
 
 .logo{
@@ -128,8 +139,16 @@ nav{
 
 .top-container img{
     width: 70%;
+    height: auto;
     margin: 2% 1.2%;
+    margin-left: 4.5%;
     border: 5px solid antiquewhite;
+    transition: .5s;
+}
+
+.top-container img:hover{
+    border-radius: 50%;
+    border: 20px solid antiquewhite;
 }
 
 .about-card{
@@ -147,6 +166,11 @@ nav{
     font-size: 2rem;    
 }
 
+.about-card a.a-button:hover{
+    background-color: black;
+    color: antiquewhite;
+}
+
 .about-card p{
     margin-top: 2%;
     width: 50%;
@@ -156,5 +180,55 @@ nav{
 
 /* Projects Section Styles */
 
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.box{
+    width: 23%;
+    text-align: center;
+    transition: .5s;
+    margin: 2% 0;
+}
+
+.box:hover{
+    color: #FF8C00;
+}
+
+.box img{
+    width: 70%;
+    height: auto;
+    transition: .5s;
+}
+
+.box img:hover{
+    border-radius: 50%;
+}
+
+/* Footer Section Styles */
+
+footer div.footer-container{
+    height: 20vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+footer a{
+    width: 15%;
+    margin: 0 auto;
+    margin-top: 1%;
+    border: 1px solid #4f4f4f;
+    padding: 0 4%;
+    font-size: 2rem;  
+    background-color: white;
+}
+
+footer a:hover{
+    background-color: black;
+    color: antiquewhite;
+}
 
