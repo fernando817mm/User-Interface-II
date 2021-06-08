@@ -97,7 +97,7 @@ header{
     height: 20vh;
 }
 
-nav{
+header nav{
     display: flex;
     flex-direction: column;
     padding-top: 5vh;
@@ -134,28 +134,39 @@ nav{
 /* About Section Styles */
 
 .top-container{
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
 }
 
-.top-container img{
-    width: 70%;
-    height: auto;
+.top-container .portrait-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.top-container .portrait-image img{
+    width: 100%;
     margin: 2% 1.2%;
     margin-left: 4.5%;
     border: 5px solid antiquewhite;
     transition: .5s;
 }
 
-.top-container img:hover{
+.top-container .portrait-image img:hover{
     border-radius: 50%;
     border: 20px solid antiquewhite;
 }
 
 .about-card{
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin: 2% 5%;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     line-height: 3;
 }
 
@@ -163,7 +174,10 @@ nav{
     width: 20%;
     border: 1px solid #4f4f4f;
     padding: 0 4%;
-    font-size: 2rem;    
+    margin: 1% 0;
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
 }
 
 .about-card a.a-button:hover{
@@ -172,8 +186,7 @@ nav{
 }
 
 .about-card p{
-    margin-top: 2%;
-    width: 50%;
+    width: 70%;
     line-height: normal;
     font-size: 2.5rem;
 }
